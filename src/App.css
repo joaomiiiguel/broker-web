@@ -2,7 +2,13 @@ body{
   margin:  0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  
 }
+a {
+  text-decoration: none;
+}
+
+
 .App {
   text-align: center;
 }
@@ -59,17 +65,53 @@ body{
   border-radius: 10px;
   font-weight: bold;
 }
+.btnSabia:hover{
+  background-color: #DA2A9F;
+}
+.btnSabia:active{
+  background-color: #F041B5;
+}
+
+.btnSabia-secund{
+  background-color: #960064;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 40px;
+  border: 2px solid #2fdada;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  display:flex;
+  align-items:center;
+  justify-content: center
+}
+
+.btnSabia:focus{
+  outline: none;
+}
+.btnSabia-secund:hover{
+  background-color: #2fdada;
+  
+}
+.btnSabia-secund:active{
+  background-color: #4BF7F7;
+  
+}
+.btnSabia-secund:focus{
+  outline: none;
+}
 .Menu-Icons{
   background-color: #960064;
   display: flex;
   flex-direction: column;
+  justify-content:center;
   align-items: center;
-  padding:15px;
+  padding:25px;
 }
-.Video-Local{
-  height: 150px;
-  background-color: #200096;
+.Galeria-Local{
+  display:flex;
+  flex-direction: column;
+  padding: 10% 5%
 }
-
-
 
