@@ -114,4 +114,13 @@ a {
   flex-direction: column;
   padding: 10% 5%
 }
+.Plantas-Apto{
+  display:flex;
+  flex-direction: column;
+  padding: 10% 5%
+}
+
+.card {
+  margin-top: 15px;
+}
 
