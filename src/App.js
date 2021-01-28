@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import { Carousel, Card } from 'react-bootstrap'
+import { Carousel, Card, Form, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import imgLogo from '../src/assets/Logo.jpg'
@@ -20,6 +20,17 @@ import planta002 from './assets/plantas/002.png'
 import planta003 from './assets/plantas/003.png'
 
 function App() {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -136,7 +147,31 @@ function App() {
         </div>
       </div>
 
+      <div className="FormCliente">
+        <h1>Contato</h1>
+        <p>Fale conosco, descubra o seu desconto e veja que é possível. Vamos começar?</p>
+      <Form  noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form.Group controlId="formBasicName">
+          <Form.Label>Qual o seu nome?</Form.Label>
+          <Form.Control type="text" required placeholder="Digite seu nome" />
+        </Form.Group>
 
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Qual o seu e-mail?</Form.Label>
+          <Form.Control type="email" required placeholder="Digite seu email" />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicPhone">
+          <Form.Label>Qual o seu whatsapp?</Form.Label>
+          <Form.Control type="tel" required placeholder="Ex: 21900000000" pattern="[0-9]{2}[0-9]{5}[0-9]{4}"/>
+        </Form.Group>
+        
+        <Button variant="light" block type="submit">
+          Submit
+        </Button>
+
+      </Form>
+      </div>
 
     </div>
   );
