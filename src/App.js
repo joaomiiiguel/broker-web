@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Carousel, Card, Form, Button } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel, Card, Form, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import imgLogo from '../src/assets/Logo.jpg'
 import capaLocal from '../src/assets/banner-capa.jpg'
@@ -138,7 +139,7 @@ function App() {
             <Card.Img variant="top" src={planta001} />
             <Card.Body>
               <Card.Text>
-                Planta FIT - Apto com 1 Quarto - 24m²
+                Planta FIT - Apto com 1 Dormitório - 24m²
               </Card.Text>
             </Card.Body>
           </Card>
@@ -146,7 +147,7 @@ function App() {
             <Card.Img variant="top" src={planta002} />
             <Card.Body>
               <Card.Text>
-                Planta Smart - Apto com 2 Quarto e varanda - 37m²
+                Planta Smart - Apto com 2 Dormitórios e varanda - 37m²
               </Card.Text>
             </Card.Body>
           </Card>
@@ -164,7 +165,8 @@ function App() {
       <div className="FormCliente">
         <h1 className="titleLocal" style={{color: 'white'}}>CONTATO</h1>
         <div className="containerForm">
-          <p>Fale conosco, descubra o seu desconto e veja que é possível. Vamos começar?</p>
+          <p>Fale conosco que, em breve, entraremos em contato</p>
+
           <Form noValidate validated={validated} onSubmit={SendEmail} className="formCads">
             <Form.Group controlId="formBasicName">
               <Form.Label>Qual o seu nome?</Form.Label>
@@ -181,16 +183,13 @@ function App() {
               <Form.Control type="tel" required placeholder="Ex: 21900000000" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" name="whats_cliente" />
             </Form.Group>
 
-            <Button variant="light" block type="submit" style={{marginTop:25}}>
+            <Button variant="light" block type="submit">
               Enviar
             </Button>
 
           </Form>
         </div>
       </div>
-    <footer>
-      <p>todos direitos reservados para fulano</p>
-    </footer>
     </div>
   );
 }
