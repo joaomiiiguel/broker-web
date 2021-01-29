@@ -138,7 +138,7 @@ function App() {
             <Card.Img variant="top" src={planta001} />
             <Card.Body>
               <Card.Text>
-                Planta FIT - Apto com 1 Quarto - 58m²
+                Planta FIT - Apto com 1 Quarto - 24m²
               </Card.Text>
             </Card.Body>
           </Card>
@@ -146,7 +146,7 @@ function App() {
             <Card.Img variant="top" src={planta002} />
             <Card.Body>
               <Card.Text>
-                Planta Smart - Apto com 2 Quarto e varanda - 65m²
+                Planta Smart - Apto com 2 Quarto e varanda - 37m²
               </Card.Text>
             </Card.Body>
           </Card>
@@ -182,8 +182,8 @@ function App() {
             </Form.Group>
 
             <Button variant="light" block type="submit">
-              Submit
-        </Button>
+              Enviar
+            </Button>
 
           </Form>
         </div>
