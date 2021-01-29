@@ -7,8 +7,6 @@ body{
 a {
   text-decoration: none;
 }
-
-
 .App {
   text-align: center;
 }
@@ -122,6 +120,11 @@ a {
 
 .card {
   margin-top: 15px;
+
+}
+.ImgMenuIcons{
+  width: 100%; 
+  border-radius: 10px;
 }
 
 .FormCliente{
@@ -129,4 +132,50 @@ a {
   color: white;
   padding: 30px;
 }
+.MenuText{
+  text-align: 'center'
+}
 
+@media screen and (min-width: 720px){
+  .Menu-Icons{
+    flex-direction: row;
+    padding: 5% 15%;
+  }
+  .ImgMenuIcons{
+    width: 40%;
+    margin-right: 50px;
+  }
+  .MenuText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    text-align: left;
+  }
+  .Galeria-Local{
+    padding: 5% 15% 0 15%
+  }
+  .Plantas-Apto{
+    padding: 5% 15%
+  }
+  .ListPlants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card{
+    width: 33%;
+  }
+  .FormCliente{
+    padding: 5% 15%;
+  }
+  .containerForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+  .formCads{
+    width: 50%;
+  }
+}
