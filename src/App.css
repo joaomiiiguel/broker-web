@@ -1,12 +1,9 @@
-html{
-  margin: 0;
-}
-body{
+*, *::after, *::before{
+  font-family: 'Roboto', sans-serif;
   margin:  0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  
 }
+
 .titleLocal{
   font-weight: bold;
   color: #960064;
@@ -43,6 +40,18 @@ a:hover {
 
 .Top-Banner {
   height: 90vh;
+  background-image: url('../src/assets/capa.png');
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.Top-Banner-Final{
+  height: 100vh;
   background-image: url('../src/assets/capa.png');
   background-size: cover ;
   background-position: center;
@@ -162,7 +171,11 @@ a:hover {
   text-align: left;
   width: 100%;
 }
-
+.TitleFinal{
+  font-size: 50px;
+  color:  #2fdada;
+  font-weight: 900;
+}
 
 @media screen and (min-width: 720px){
   .Menu-Icons{
@@ -206,5 +219,8 @@ a:hover {
   }
   .formCads{
     width: 50%;
+  }
+  .TitleFinal{
+    font-size: 80px;
   }
 }
