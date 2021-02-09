@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.App {
+  text-align: center;
+  margin: 0;
+  
+}
 .titleLocal{
   font-weight: bold;
   color: #960064;
@@ -17,10 +22,7 @@ a:hover {
 .links:hover {
   text-decoration: none;
 }
-.App {
-  text-align: center;
-  margin: 0;
-}
+
 
 .App-header {
   background-color:black;

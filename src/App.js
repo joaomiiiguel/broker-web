@@ -27,10 +27,9 @@ import planta002 from './assets/plantas/002.png'
 import planta003 from './assets/plantas/003.png'
 
 export default function App() {
-  
+
   return (
     <Router>
-      <div className="App">
         <Switch>
           <Route path="/confirmation-form">
             <FinalForm />
@@ -39,7 +38,6 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
@@ -71,8 +69,8 @@ function Home() {
 
   }
   return (
-    <div>
-    <header className="App-header">
+    <div className="App">
+      <header className="App-header">
         <div className="Top-bar">
           <img src={imgLogo} className="Logo-Img" alt="Logo do Empreendimento" />
         </div>
@@ -163,7 +161,7 @@ function Home() {
             <Card.Img variant="top" src={planta001} />
             <Card.Body>
               <Card.Text>
-              Planta FIT - Apto com 1 Dormitório - 24m²
+                Planta FIT - Apto com 1 Dormitório - 24m²
               </Card.Text>
             </Card.Body>
           </Card>
@@ -171,7 +169,7 @@ function Home() {
             <Card.Img variant="top" src={planta002} />
             <Card.Body>
               <Card.Text>
-              Planta Smart - Apto com 2 Dormitórios e varanda - 37m²
+                Planta Smart - Apto com 2 Dormitórios e varanda - 37m²
               </Card.Text>
             </Card.Body>
           </Card>
@@ -179,7 +177,7 @@ function Home() {
             <Card.Img variant="top" src={planta003} />
             <Card.Body>
               <Card.Text>
-              Planta Externa - Bicicletário, Espaço Camarote, Lavanderia, Academia, Salão de festas, Coworking, Churrasqueiras, Pet Place, Playground
+                Planta Externa - Bicicletário, Espaço Camarote, Lavanderia, Academia, Salão de festas, Coworking, Churrasqueiras, Pet Place, Playground
               </Card.Text>
             </Card.Body>
           </Card>
@@ -187,7 +185,7 @@ function Home() {
       </div>
 
       <div className="FormCliente">
-        <h1 className="titleLocal" style={{color: 'white'}}>CONTATO</h1>
+        <h1 className="titleLocal" style={{ color: 'white' }}>CONTATO</h1>
         <div className="containerForm">
           <p>Fale conosco que, em breve, entraremos em contato</p>
 
@@ -207,15 +205,15 @@ function Home() {
               <Form.Control type="tel" required placeholder="Ex: 21900000000" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" name="whats_cliente" />
             </Form.Group>
 
-            
+
             <Button variant="light" block type="submit">
               Enviar
             </Button>
-            
+
 
           </Form>
         </div>
       </div>
-      </div>
-      );
+    </div>
+  );
 }
